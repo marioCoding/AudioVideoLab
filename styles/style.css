@@ -4,9 +4,9 @@
   font-family: 'Orbitron', sans-serif;
 }
 body {
-  background-image: url('../images/apocalypticBG.jpg');
+  background-image: url('../images/ombreBackground.png');
   background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+  background-size: 125vw 125vh;
 }
 header {
   display: flex;
@@ -20,4 +20,38 @@ h1 {
 h2 {
   text-align: center;
   font-style: italic;
+}
+/* Video Player */
+.videoPlayer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  border: solid rgba(255, 228, 196, 0.6) 10px;
+  width: 50%;
+  height: 50%;
+}
+/* Controls */
+.video-form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 50%;
+}
+fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#button {
+  background-color: rgb(255, 228, 196);
+  width: 90%;
+  margin: 5px 5px 5px 5px;
+  text-align: center;
+  border: solid black 1px;
+  padding: 2px;
+}
+#button:hover {
+  cursor: pointer;
+  background: rgb(255, 228, 196, .6);
 }

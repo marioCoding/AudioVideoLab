@@ -9,15 +9,44 @@
 </head>
 <body>
   <header>
-    <h1>SNL - Mario Kart</h1>
+    <h1>Audio/Video Lab Exercise</h1>
   </header>
   <main>
-    <h2>"It's a-me, Mario."</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/UiIRlg4Xr5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  
-    
+    <video class="videoPlayer" controls>
+      <source src="./video/leverage-a-synergy.mp4" type="video/mp4">
+      <source src="./video/leverage-a-synergy.webm" type="video/webm">
+      <track kind="caption" srclang="en" src="./captions/captions.vtt" default>
+     
+
+      <!-- fallback text -->
+      <h2>How to leverage a synergy</h2>
+      <p>Hi, my name's Dr Archimedes Einstein and I'm a Doctor of Science at the University of Science in a
+        very famous town that you're too stupid to have heard of. Anyway, today we're going to talk about
+        "synergies". A lot of people are worried about synergies, but I can tell you that statistics show
+        there is no danger of increased cancer risk from synergies. However, it's better to be safe than
+        sorry. I'm going to demonstrate how you how we can leverage a synergy.
+      </p>
+      <p>First of all, I've got this banana. This banana represents "Web 2.0" and look, I've written on it
+        some "user-generated content" just to prove the point [LOL, WTF, You suck]. I take my "Web 2.0" and
+        I put it in an envelope marked "paradigm shift". OK. Very important, I put the envelope down and
+        With a bit of "blue sky thinking", I "push the envelope". Then, I take my leverage mallet, and URGH!
+        GRRAHH!! YARRRR!!!! ...and there we can see a synergy, leveraged.
+      </p>
     </video>
+
+    <div class="controls">
+      <form class="video-form">
+        <fieldset>
+          <div id="button" class="play-button">Play</div>
+          <div id="button" class="pause-button">Pause</div>
+          <div id="button" class="mute-button">Mute</div>
+          <div id="button" class="unmute-button">Unmute</div>
+          <div id="button" class="rewind-button">Beginning</div>
+          <div id="button" class="end-button">End</div>
+        </fieldset>
+      </form>
+    </div>
   </main>
-  
+  <script src="./scripts/main.js"></script>
 </body>
 </html>
