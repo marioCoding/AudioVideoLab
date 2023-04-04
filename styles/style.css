@@ -4,9 +4,9 @@
   font-family: 'Orbitron', sans-serif;
 }
 body {
-  background-image: url('../images/ombreBackground.png');
+  background: linear-gradient(180deg, rgba(133,226,218,1) 0%, rgba(240,181,158,1) 100%);
   background-repeat: no-repeat;
-  background-size: 125vw 125vh;
+  background-size: 175vw 175vh;
 }
 header {
   display: flex;
@@ -21,6 +21,7 @@ h2 {
   text-align: center;
   font-style: italic;
 }
+
 /* Video Player */
 .videoPlayer {
   display: block;
@@ -28,16 +29,17 @@ h2 {
   margin-right: auto;
   margin-top: 15px;
   border: solid rgba(255, 228, 196, 0.6) 10px;
-  width: 50%;
+  width: 100%;
   height: 50%;
 }
+
 /* Controls */
 .video-form {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
-  width: 50%;
+  width: 100%;
 }
 fieldset {
   display: grid;
@@ -54,4 +56,28 @@ fieldset {
 #button:hover {
   cursor: pointer;
   background: rgb(255, 228, 196, .6);
+}
+
+/* Div that changes as video plays */
+.changing-div {
+  width: 500px;
+  height: 500px;
+  border: solid rgba(255, 228, 196, 0.6) 10px;
+  margin-top: 15px;
+  /* Center the div */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  /* Main */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 150px;
+  }
+  .videoPlayer {
+    width: 150%;
+  }
 }
