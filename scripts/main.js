@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////
-import { cueTimer } from "./cuepoints.js";
+import { cueTimer } from "./cuepoints.js"; 
 
 /* The following code changes the changing-div when a given cuepoint in the video plays */
   const image1 = document.querySelector(".image1");
@@ -12,11 +12,11 @@ import { cueTimer } from "./cuepoints.js";
   
   document.addEventListener("DOMContentLoaded", (e) => {
     var myCues = [
-        { seconds: 3.6, callback: displayProfessorImage },
-        { seconds: 11.5, callback: displaySynergiesImage },
+        { seconds: 3, callback: displayProfessorImage },
+        { seconds: 11, callback: displaySynergiesImage },
         { seconds: 23, callback: displayBananaImage },
         { seconds: 31, callback: displayChatGif },
-        { seconds: 37.5, callback: displayParadigmShift },
+        { seconds: 37, callback: displayParadigmShift },
         { seconds: 50, callback: displayNukeGif },
         { seconds: 54, callback: displayEmojiImage }
     ];
@@ -35,6 +35,18 @@ import { cueTimer } from "./cuepoints.js";
         selectVideo(e, vid);
     });
   
+    // delete/add images during a given cuepoint
+    if (video.currentTime() < 4) {
+      image1.style.display = "none";
+      image2.style.display = "none";
+      image3.style.display = "none";
+      image4.style.display = "none";
+      image5.style.display = "none";
+      image6.style.display = "none";
+      image7.style.display = "none";
+    }
+
+
   });
   
   function displayProfessorImage() {

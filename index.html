@@ -14,7 +14,7 @@
 
   <main>
     <section class="section1">
-    <video class="videoPlayer" controls>
+    <video id="vid" controls>
       <source src="./video/leverage-a-synergy.mp4" type="video/mp4">
       <source src="./video/leverage-a-synergy.webm" type="video/webm">
       <track kind="caption" srclang="en" src="./captions/captions.vtt" default>
@@ -24,7 +24,7 @@
 
     <div class="controls">
       <form class="video-form">
-        <fieldset>
+        <fieldset class="video-buttons">
           <div id="button" class="play-button">Play</div>
           <div id="button" class="pause-button">Pause</div>
           <div id="button" class="mute-button">Mute</div>
@@ -32,9 +32,18 @@
           <div id="button" class="rewind-button">Beginning</div>
           <div id="button" class="end-button">End</div>
         </fieldset>
+        <fieldset>
+          <select id="video_select">
+            <option>Select a video to play...</option>
+            <option value="assets/leverage-a-synergy.mp4">Leverage (mp4)</option>
+            <option value="assets/leverage-a-synergy.webm">Leverage (webm)</option>
+          </select>
+        </fieldset>
       </form>
     </div>
   </section>
+
+
 
   <section class="section2">
     <div class="changing-div">
@@ -49,8 +58,8 @@
   </section>
   </main>
   
-  <script src="./scripts/main.js"></script>
-  <script src="./scripts/cuepoints.js"></script>
+  <script src="./scripts/main.js" type="module"></script>
+  <script src="./scripts/cuepoints.js " type="module"></script>
   <script src="./scripts/video_helpers.js"></script>
 </body>
 </html>
