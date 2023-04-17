@@ -9,6 +9,7 @@ import { cueTimer } from "./cuepoints.js";
   const image5 = document.querySelector(".image5");
   const image6 = document.querySelector(".image6");
   const image7 = document.querySelector(".image7");
+  const changingDiv = document.querySelector(".changing-div");
   
   document.addEventListener("DOMContentLoaded", (e) => {
     var myCues = [
@@ -34,38 +35,48 @@ import { cueTimer } from "./cuepoints.js";
     selectList.addEventListener("change", (e) => {
         selectVideo(e, vid);
     });
-  
-    // delete/add images during a given cuepoint
-    if (video.currentTime() < 4) {
-      image1.style.display = "none";
-      image2.style.display = "none";
-      image3.style.display = "none";
-      image4.style.display = "none";
-      image5.style.display = "none";
-      image6.style.display = "none";
-      image7.style.display = "none";
-    }
-
 
   });
   
   function displayProfessorImage() {
     image1.style.display = "block";
+    image2.style.display = "none";
+    image3.style.display = "none";
+    image4.style.display = "none";
+    image5.style.display = "none";
+    image6.style.display = "none";
+    image7.style.display = "none";
+    changingDiv.style.height = "100%";
   }
   function displaySynergiesImage() {
     image1.style.display = "none";
     image2.style.display = "block";
+    image3.style.display = "none";
+    image4.style.display = "none";
+    image5.style.display = "none";
+    image6.style.display = "none";
+    image7.style.display = "none";
+    changingDiv.style.height = "100%";
   }
   function displayBananaImage() {
     image1.style.display = "none";
     image2.style.display = "none";
     image3.style.display = "block";
+    image4.style.display = "none";
+    image5.style.display = "none";
+    image6.style.display = "none";
+    image7.style.display = "none";
+    changingDiv.style.height = "100%";
   }
   function displayChatGif() {
     image1.style.display = "none";
     image2.style.display = "none";
     image3.style.display = "none";
     image4.style.display = "block";
+    image5.style.display = "none";
+    image6.style.display = "none";
+    image7.style.display = "none";
+    changingDiv.style.height = "100vh";
   }
   function displayParadigmShift() {
     image1.style.display = "none";
@@ -73,6 +84,9 @@ import { cueTimer } from "./cuepoints.js";
     image3.style.display = "none";
     image4.style.display = "none";
     image5.style.display = "block";
+    image6.style.display = "none";
+    image7.style.display = "none";
+    changingDiv.style.height = "100%";
   }
   function displayNukeGif() {
     image1.style.display = "none";
@@ -81,6 +95,8 @@ import { cueTimer } from "./cuepoints.js";
     image4.style.display = "none";
     image5.style.display = "none";
     image6.style.display = "block";
+    image7.style.display = "none";
+    changingDiv.style.height = "100%";
   }
   function displayEmojiImage() {
     image1.style.display = "none";
@@ -90,6 +106,7 @@ import { cueTimer } from "./cuepoints.js";
     image5.style.display = "none";
     image6.style.display = "none";
     image7.style.display = "block";
+    changingDiv.style.height = "100%";
   }
   
   
