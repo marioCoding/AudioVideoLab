@@ -16,6 +16,8 @@ const image4 = document.querySelector(".image4");
 const image5 = document.querySelector(".image5");
 const image6 = document.querySelector(".image6");
 const image7 = document.querySelector(".image7");
+const image8 = document.querySelector(".image8");
+const image9 = document.querySelector(".image9");
 // other variables
 const changingDiv = document.querySelector(".changing-div");
 
@@ -45,7 +47,8 @@ let restartVideo = function(position) {
   image5.style.display = "none";
   image6.style.display = "none";
   image7.style.display = "none";
-
+  image8.style.display = "none";
+  image9.style.display = "none";
 }
 let endVideo = function(position) {
   if(!position)
