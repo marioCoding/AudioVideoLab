@@ -9,17 +9,21 @@ import { cueTimer } from "./cuepoints.js";
   const image5 = document.querySelector(".image5");
   const image6 = document.querySelector(".image6");
   const image7 = document.querySelector(".image7");
+  const image8 = document.querySelector(".image8");
+  const image9 = document.querySelector(".image9");
   const changingDiv = document.querySelector(".changing-div");
   
   document.addEventListener("DOMContentLoaded", (e) => {
     var myCues = [
         { seconds: 3, callback: displayProfessorImage },
         { seconds: 11, callback: displaySynergiesImage },
+        { seconds: 15, callback: displayMathImage },
         { seconds: 23, callback: displayBananaImage },
         { seconds: 31, callback: displayChatGif },
         { seconds: 37, callback: displayParadigmShift },
+        { seconds: 45, callback: displayThinkingEmoji },
         { seconds: 50, callback: displayNukeGif },
-        { seconds: 54, callback: displayEmojiImage }
+        { seconds: 54, callback: displayWoozyEmoji }
     ];
   
     //this activates the cuepoints module.
@@ -46,6 +50,8 @@ import { cueTimer } from "./cuepoints.js";
     image5.style.display = "none";
     image6.style.display = "none";
     image7.style.display = "none";
+    image8.style.display = "none";
+    image9.style.display = "none";
     changingDiv.style.height = "100%";
   }
   function displaySynergiesImage() {
@@ -56,9 +62,11 @@ import { cueTimer } from "./cuepoints.js";
     image5.style.display = "none";
     image6.style.display = "none";
     image7.style.display = "none";
+    image8.style.display = "none";
+    image9.style.display = "none";
     changingDiv.style.height = "100%";
   }
-  function displayBananaImage() {
+  function displayMathImage() {
     image1.style.display = "none";
     image2.style.display = "none";
     image3.style.display = "block";
@@ -66,9 +74,11 @@ import { cueTimer } from "./cuepoints.js";
     image5.style.display = "none";
     image6.style.display = "none";
     image7.style.display = "none";
+    image8.style.display = "none";
+    image9.style.display = "none";
     changingDiv.style.height = "100%";
   }
-  function displayChatGif() {
+  function displayBananaImage() {
     image1.style.display = "none";
     image2.style.display = "none";
     image3.style.display = "none";
@@ -76,9 +86,11 @@ import { cueTimer } from "./cuepoints.js";
     image5.style.display = "none";
     image6.style.display = "none";
     image7.style.display = "none";
-    changingDiv.style.height = "100vh";
+    image8.style.display = "none";
+    image9.style.display = "none";
+    changingDiv.style.height = "100%";
   }
-  function displayParadigmShift() {
+  function displayChatGif() {
     image1.style.display = "none";
     image2.style.display = "none";
     image3.style.display = "none";
@@ -86,6 +98,30 @@ import { cueTimer } from "./cuepoints.js";
     image5.style.display = "block";
     image6.style.display = "none";
     image7.style.display = "none";
+    image8.style.display = "none";
+    changingDiv.style.height = "100%";
+  }
+  function displayParadigmShift() {
+    image1.style.display = "none";
+    image2.style.display = "none";
+    image3.style.display = "none";
+    image4.style.display = "none";
+    image5.style.display = "none";
+    image6.style.display = "block";
+    image7.style.display = "none";
+    image8.style.display = "none";
+    changingDiv.style.height = "100%";
+  }
+  function displayThinkingEmoji() {
+    image1.style.display = "none";
+    image2.style.display = "none";
+    image3.style.display = "none";
+    image4.style.display = "none";
+    image5.style.display = "none";
+    image6.style.display = "none";
+    image7.style.display = "block";
+    image8.style.display = "none";
+    image9.style.display = "none";
     changingDiv.style.height = "100%";
   }
   function displayNukeGif() {
@@ -94,18 +130,22 @@ import { cueTimer } from "./cuepoints.js";
     image3.style.display = "none";
     image4.style.display = "none";
     image5.style.display = "none";
-    image6.style.display = "block";
+    image6.style.display = "none";
     image7.style.display = "none";
+    image8.style.display = "block";
+    image9.style.display = "none";
     changingDiv.style.height = "100%";
   }
-  function displayEmojiImage() {
+  function displayWoozyEmoji() {
     image1.style.display = "none";
     image2.style.display = "none";
     image3.style.display = "none";
     image4.style.display = "none";
     image5.style.display = "none";
     image6.style.display = "none";
-    image7.style.display = "block";
+    image7.style.display = "none";
+    image8.style.display = "none";
+    image9.style.display = "block";
     changingDiv.style.height = "100%";
   }
   
