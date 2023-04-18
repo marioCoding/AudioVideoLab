@@ -6,7 +6,7 @@
 body {
   background: linear-gradient(180deg, rgba(133,226,218,1) 0%, rgba(240,181,158,1) 100%);
   background-repeat: no-repeat;
-  background-size: 175vw 175vh;
+  background-size: 200vw 200vh;
 }
 header {
   display: flex;
@@ -127,7 +127,7 @@ h2 {
     width: 100%;
   }
   .changing-div {
-    width: 70%;
+    width: 90%;
   }
 
 }
