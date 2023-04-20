@@ -18,6 +18,7 @@ const image6 = document.querySelector(".image6");
 const image7 = document.querySelector(".image7");
 const image8 = document.querySelector(".image8");
 const image9 = document.querySelector(".image9");
+const image10 = document.querySelector(".image10");
 // other variables
 const changingDiv = document.querySelector(".changing-div");
 
@@ -49,6 +50,10 @@ let restartVideo = function(position) {
   image7.style.display = "none";
   image8.style.display = "none";
   image9.style.display = "none";
+  image10.style.display = "none";
+  changingDiv.style.height = "100%";
+  document.body.style.background = "linear-gradient(180deg, rgba(133,226,218,1) 0%, rgba(240,181,158,1) 100%)";
+  document.body.style.backgroundSize = "100vw 100vh";
 }
 let endVideo = function(position) {
   if(!position)

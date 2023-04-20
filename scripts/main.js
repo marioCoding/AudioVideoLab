@@ -11,13 +11,16 @@ import { cueTimer } from "./cuepoints.js";
   const image7 = document.querySelector(".image7");
   const image8 = document.querySelector(".image8");
   const image9 = document.querySelector(".image9");
+  const image10 = document.querySelector(".image10");
   const changingDiv = document.querySelector(".changing-div");
+  
   
   document.addEventListener("DOMContentLoaded", (e) => {
     var myCues = [
         { seconds: 3, callback: displayProfessorImage },
         { seconds: 11, callback: displaySynergiesImage },
         { seconds: 15, callback: displayMathImage },
+        { seconds: 17, callback: displayZeroGif },
         { seconds: 23, callback: displayBananaImage },
         { seconds: 31, callback: displayChatGif },
         { seconds: 37, callback: displayParadigmShift },
@@ -52,7 +55,10 @@ import { cueTimer } from "./cuepoints.js";
     image7.style.display = "none";
     image8.style.display = "none";
     image9.style.display = "none";
+    image10.style.display = "none";
     changingDiv.style.height = "100%";
+    document.body.style.background = "linear-gradient(180deg, rgba(133,226,218,1) 0%, rgba(240,181,158,1) 100%)";
+    document.body.style.backgroundSize = "100vw 100vh";
   }
   function displaySynergiesImage() {
     image1.style.display = "none";
@@ -64,7 +70,10 @@ import { cueTimer } from "./cuepoints.js";
     image7.style.display = "none";
     image8.style.display = "none";
     image9.style.display = "none";
+    image10.style.display = "none";
     changingDiv.style.height = "100%";
+    document.body.style.backgroundImage = "url('../images/synergiesBG.jpg')";
+    document.body.style.backgroundSize = "100vw 100vh";
   }
   function displayMathImage() {
     image1.style.display = "none";
@@ -76,9 +85,12 @@ import { cueTimer } from "./cuepoints.js";
     image7.style.display = "none";
     image8.style.display = "none";
     image9.style.display = "none";
+    image10.style.display = "none";
     changingDiv.style.height = "100%";
+    document.body.style.background = "linear-gradient(180deg, rgba(133,226,218,1) 0%, rgba(240,181,158,1) 100%)";
+    document.body.style.backgroundSize = "100vw 100vh";
   }
-  function displayBananaImage() {
+  function displayZeroGif() {
     image1.style.display = "none";
     image2.style.display = "none";
     image3.style.display = "none";
@@ -88,9 +100,12 @@ import { cueTimer } from "./cuepoints.js";
     image7.style.display = "none";
     image8.style.display = "none";
     image9.style.display = "none";
+    image10.style.display = "none";
     changingDiv.style.height = "100%";
+    document.body.style.background = "linear-gradient(180deg, rgba(133,226,218,1) 0%, rgba(240,181,158,1) 100%)";
+    document.body.style.backgroundSize = "100vw 100vh";
   }
-  function displayChatGif() {
+  function displayBananaImage() {
     image1.style.display = "none";
     image2.style.display = "none";
     image3.style.display = "none";
@@ -99,9 +114,13 @@ import { cueTimer } from "./cuepoints.js";
     image6.style.display = "none";
     image7.style.display = "none";
     image8.style.display = "none";
+    image9.style.display = "none";
+    image10.style.display = "none";
     changingDiv.style.height = "100%";
+    document.body.style.background = "linear-gradient(180deg, rgba(133,226,218,1) 0%, rgba(240,181,158,1) 100%)";
+    document.body.style.backgroundSize = "125vw 125vh";
   }
-  function displayParadigmShift() {
+  function displayChatGif() {
     image1.style.display = "none";
     image2.style.display = "none";
     image3.style.display = "none";
@@ -110,9 +129,12 @@ import { cueTimer } from "./cuepoints.js";
     image6.style.display = "block";
     image7.style.display = "none";
     image8.style.display = "none";
+    image10.style.display = "none";
     changingDiv.style.height = "100%";
+    document.body.style.background = "linear-gradient(180deg, rgba(133,226,218,1) 0%, rgba(240,181,158,1) 100%)";
+    document.body.style.backgroundSize = "100vw 100vh";
   }
-  function displayThinkingEmoji() {
+  function displayParadigmShift() {
     image1.style.display = "none";
     image2.style.display = "none";
     image3.style.display = "none";
@@ -121,10 +143,11 @@ import { cueTimer } from "./cuepoints.js";
     image6.style.display = "none";
     image7.style.display = "block";
     image8.style.display = "none";
-    image9.style.display = "none";
+    image10.style.display = "none";
     changingDiv.style.height = "100%";
+    document.body.style.backgroundSize = "100vw 100vh";
   }
-  function displayNukeGif() {
+  function displayThinkingEmoji() {
     image1.style.display = "none";
     image2.style.display = "none";
     image3.style.display = "none";
@@ -134,7 +157,23 @@ import { cueTimer } from "./cuepoints.js";
     image7.style.display = "none";
     image8.style.display = "block";
     image9.style.display = "none";
+    image10.style.display = "none";
+    changingDiv.style.height = "90%";
+    document.body.style.backgroundSize = "100vw 100vh";
+  }
+  function displayNukeGif() {
+    image1.style.display = "none";
+    image2.style.display = "none";
+    image3.style.display = "none";
+    image4.style.display = "none";
+    image5.style.display = "none";
+    image6.style.display = "none";
+    image7.style.display = "none";
+    image8.style.display = "none";
+    image9.style.display = "block";
+    image10.style.display = "none";
     changingDiv.style.height = "100%";
+    document.body.style.background = "linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(246,3,3,1) 17%, rgba(121,9,9,1) 57%, rgba(255,177,0,1) 100%)";
   }
   function displayWoozyEmoji() {
     image1.style.display = "none";
@@ -145,8 +184,11 @@ import { cueTimer } from "./cuepoints.js";
     image6.style.display = "none";
     image7.style.display = "none";
     image8.style.display = "none";
-    image9.style.display = "block";
-    changingDiv.style.height = "100%";
+    image9.style.display = "none";
+    image10.style.display = "block";
+    changingDiv.style.height = "90%";
+    document.body.style.background = "linear-gradient(0deg, rgba(22,186,227,1) 0%, rgba(11,57,57,1) 30%, rgba(42,30,107,1) 65%, rgba(255,255,255,1) 87%, rgba(97,138,176,1) 100%";
+    document.body.style.backgroundSize = "100vw 125vh";
   }
   
   
