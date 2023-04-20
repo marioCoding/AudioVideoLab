@@ -72,7 +72,7 @@ import { cueTimer } from "./cuepoints.js";
     image9.style.display = "none";
     image10.style.display = "none";
     changingDiv.style.height = "100%";
-    document.body.style.backgroundImage = "url('../images/synergiesBG.jpg')";
+    document.body.style.backgroundImage = "url('https://t3.ftcdn.net/jpg/05/26/81/70/360_F_526817019_Od2aIhfc86OplRwY254RdRmeq6ggHZJc.jpg')";
     document.body.style.backgroundSize = "100vw 100vh";
   }
   function displayMathImage() {
@@ -186,8 +186,8 @@ import { cueTimer } from "./cuepoints.js";
     image8.style.display = "none";
     image9.style.display = "none";
     image10.style.display = "block";
-    changingDiv.style.height = "90%";
-    document.body.style.background = "linear-gradient(0deg, rgba(22,186,227,1) 0%, rgba(11,57,57,1) 30%, rgba(42,30,107,1) 65%, rgba(255,255,255,1) 87%, rgba(97,138,176,1) 100%";
+    changingDiv.style.height = "80%";
+    document.body.style.background = "linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,85,107,1) 65%, rgba(54,110,179,1) 87%, rgba(97,138,176,1) 100%)";
     document.body.style.backgroundSize = "100vw 125vh";
   }
   
